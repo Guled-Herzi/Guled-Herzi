@@ -1,5 +1,6 @@
 # import numpy as np
 # import math
+# Inspired by QuantPy
 
 def binomial_options_pricing_model(K,T,S0,r,N,u,d,opttype='P'):
 
@@ -203,4 +204,5 @@ def Bjerksund_Stensland_model(call_put, stock_price, strike_price, risk_free_int
         raise ValueError("Invalid input: use 'c' for call or 'p' for put")
 
 result = Bjerksund_Stensland_model("c", 42, 40, 0.04, 0.75, 0.35, -0.04)
+
 print(f"Option price: {result}")
